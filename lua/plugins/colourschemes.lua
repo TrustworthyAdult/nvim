@@ -1,7 +1,6 @@
 return {
   { "sainnhe/sonokai" },
-
-  -- Configure LazyVim to load gruvbox
+  { "rose-pine/neovim", name = "rose-pine" },
   {
     "LazyVim/LazyVim",
     opts = {
