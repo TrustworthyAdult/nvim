@@ -6,4 +6,10 @@ return {
       colorscheme = "sonokai",
     },
   },
+  {
+    "mawkler/modicator.nvim",
+    opts = {
+      show_warnings = false,
+    },
+  },
 }
