@@ -1,5 +1,6 @@
 return {
   { "sainnhe/sonokai" },
+  { "HiPhish/rainbow-delimiters.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
