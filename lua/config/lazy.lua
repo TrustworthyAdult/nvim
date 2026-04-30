@@ -16,6 +16,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
+    -- Must be first: gives snacks_picker's optional alpha spec a real dashboard.button
+    -- before it runs (innermost opts = processed first in lazy's _values recursion)
+    {
+      "goolord/alpha-nvim",
+      opts = function()
+        return require("alpha.themes.dashboard")
+      end,
+    },
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
