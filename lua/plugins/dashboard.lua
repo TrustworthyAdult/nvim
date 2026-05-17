@@ -7,7 +7,7 @@ return {
     config = function()
       local alpha = require("alpha")
       local dashboard = require("alpha.themes.dashboard")
-      local splash = require("milli").load({ splash = "bladerunner" })
+      local splash = require("milli").load({ splash = "shadertwo" })
 
       -- ── highlights ───────────────────────────────────────────────────
       vim.api.nvim_set_hl(0, "AlphaHeader", { fg = "#e2637a", bold = true })
@@ -223,7 +223,7 @@ return {
       table.insert(layout, { type = "padding", val = 1 })
 
       alpha.setup({ layout = layout })
-      require("milli").alpha({ splash = "bladerunner", loop = true })
+      require("milli").alpha({ splash = "shadertwo", loop = true })
     end,
   },
 }
